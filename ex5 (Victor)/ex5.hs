@@ -1,4 +1,3 @@
-
 interseccao :: [Integer] -> [Integer] -> [Integer]
 interseccao [] _ = []
 interseccao (head_a:a) b | head_a `elem` b = head_a : interseccao a b

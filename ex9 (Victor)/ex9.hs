@@ -18,7 +18,9 @@ nextDiffrent (a: b: tail) | a == b = nextDiffrent(b:tail)
 compactar :: [Int] -> [[Int]]
 compactar [] = []
 compactar [a, b] = []
-compactar (a: b: tail) | count (a:b:tail) > 0 = [1 + count (a:b:tail), a]: compactar(nextDiffrent(a: b: tail))
+compactar (a: b: tail) | count (a:b:tail) > 0 = 
+                          [1 + count (a:b:tail), a] : 
+                          compactar(nextDiffrent(a: b: tail))
                        | otherwise = [a]: compactar(nextDiffrent(a: b: tail))
 
 --ghci ex9.hs

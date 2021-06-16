@@ -22,7 +22,8 @@ compactar([]) -> [];
 compactar([_, _]) -> [];
 compactar([A, B|Tail]) ->
   case {count([A,B|Tail]) > 0} of 
-    {true} -> [[1 + count ([A,B|Tail]), A]] ++ compactar(nextDiffrent([A, B| Tail]));
+    {true} -> [[1 + count ([A,B|Tail]), A]] 
+      ++ compactar(nextDiffrent([A, B| Tail]));
     {false} -> [A] ++ compactar(nextDiffrent([A, B| Tail]))
   end.
 

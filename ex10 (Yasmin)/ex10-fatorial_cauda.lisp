@@ -1,4 +1,6 @@
-; N funciona como um contador decrescente e P funciona como um acumulador. Quando N = 1, P já tem o valor do fatorial do N inicial, ou seja, não é preciso desempilhar as chamadas recursivas
+; N funciona como um contador decrescente e P funciona como um acumulador. 
+; Quando N = 1, P já tem o valor do fatorial do N inicial, ou seja, 
+; não é preciso desempilhar as chamadas recursivas
 
 (defun fatorial_aux (n p)
     (if (= n 1)        
