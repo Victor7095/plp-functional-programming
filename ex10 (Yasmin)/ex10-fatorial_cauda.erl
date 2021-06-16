@@ -1,4 +1,4 @@
--module(fatorial_cauda).
+-module(ex10-fatorial_cauda).
 -export([start/0]).
 
 % N funciona como um contador decrescente e P funciona como um acumulador. Quando N = 1, P já tem o valor do fatorial do N inicial, ou seja, não é preciso desempilhar as chamadas recursivas
